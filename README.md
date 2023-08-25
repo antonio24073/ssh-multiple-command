@@ -7,7 +7,9 @@
 
 ## Installing
 
-Copy and rename `servers-example.txt` to `servers.txt`. Configure it.
+Copy and rename `servers-example.txt` to `servers.txt`. 
+
+Configure it.
 
 ## Running
 
