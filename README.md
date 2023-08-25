@@ -1,17 +1,16 @@
 # SSH Multiple Commands
 
+## Dependencies
+
+- Docker
+- Docker compose
+
 ## Installing
-
-Install sshpass:
-
-```shell
-sudo apt-get install sshpass
-```
 
 Copy and rename `servers-example.txt` to `servers.txt`. Configure it.
 
 ## Running
 
 ```shell
-./script.sh
+docker compose -f "docker-compose.yml" up -d --build
 ```
