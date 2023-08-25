@@ -1,0 +1,2 @@
+user|password|192.168.0.123|22|cd /home/user/ssh-multiple-command; git pull origin main;
+user|password|192.168.0.123|22|cd /home/user/ssh-multiple-command; git pull origin main;
