@@ -24,8 +24,8 @@ do
     echo $SERVER_COMMAND;
 
     printf "\nOutput ssh:\n";
-    sshpass -p "$SERVER_PASS" ssh -o PubkeyAuthentication=no -o PreferredAuthentications=password -n -p $SERVER_PORT -l $SERVER_USER $SERVER_SERVER "$SERVER_COMMAND" & wait
+    sshpass -p "$SERVER_PASS" ssh -T  -o StrictHostKeyChecking=no -o PubkeyAuthentication=no -o PreferredAuthentications=password -n -p $SERVER_PORT -l $SERVER_USER $SERVER_SERVER "$SERVER_COMMAND"
 
-done < ./servers.txt
+done < /app/servers.txt
 
 
